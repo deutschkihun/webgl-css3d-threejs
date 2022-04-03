@@ -2,34 +2,31 @@
 
 Starter project for Three.JS with webpack and babel configuration 
 
-## Development
+## Development / Production
 
 Clone the project and install dependencies:
 
 ```bash
-git clone https://github.com/aakatev/three-js-webpack.git
+git clone https://github.com/deutschkihun/Animation3DWorld
 npm i
 ```
 
 Start webpack development server:
 
 ```bash
-npm run start
+npm start
 ```
 
-Webpack configuration is located in [`webpack.config.js`](webpack.config.js).
-
-## Deployment on GitHub Pages
-
-**Works with any other static website hosting too.**
-
-Bundle your code, and push it in your repo:
+Bundle dev mode 
 
 ```bash
 npm run build
-git add
-git commit -m "initial commit"
-git push
+```
+
+Bundling prod mode 
+
+```bash
+npm run prod
 ```
 
 ## Extra
