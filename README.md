@@ -52,5 +52,11 @@ npm i style-loader css-loader
 ```
 css-loader makes css loadable in javascript file. style-loader applies loaded css in javascript. 
 
+### why webpack ? 
+
+1. It combines multiple files into one (js,css,images) , reducing the burden of network connectivity. We can provide faster service. 
+2. If multiple different packages use global variables with the same name, the program will malfunction. Modules have emerged to overcome these problems. Web packs are still the latest technology, so they help you use modules that are ambiguous to apply, even in older browsers. 
+3. There are so many plugins in the web pack. These plugins allow you to automate a variety of tasks required for web development.
+
 ## Babel 
 
