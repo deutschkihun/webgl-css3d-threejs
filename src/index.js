@@ -4,6 +4,8 @@ import './modal'
 import css from './main.css'
 import square from './assets/square.png'
 
+
+console.log("121111")
 if (WEBGL.isWebGLAvailable()) {
   var camera, scene, renderer
   var plane
