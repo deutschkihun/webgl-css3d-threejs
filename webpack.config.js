@@ -4,10 +4,18 @@ const webpack = require('webpack')
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
+  // multi entry file 
+  /*/entry: {
+    index:'./src/index.js',
+    app:'./src/app.js',
+  },*/
   output: {
     path: path.resolve(__dirname, 'dist'),
     publicPath: '/dist/',
     filename: 'bundle.js',
+    // multi filename
+    // name is a name of each entry file, in this case index and app
+    //filename: '[name]_bundle.js' 
   },
   module: {
     rules: [
@@ -20,6 +28,14 @@ module.exports = {
       {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
       },
     ],
   },
@@ -41,47 +57,3 @@ module.exports = {
   },
   plugins: [new webpack.HotModuleReplacementPlugin()],
 }
-
-
-/*const path = require('path')
-const webpack = require('webpack')
-
-
-// https://webpack.js.org/configuration/
-// npx webpack-dev-server --mode development
-module.exports = {
-    entry: './src/index.js',
-    mode: 'development',
-    module: {
-        rules: [
-            {
-                test: /\.(js|jsx)$/,
-                exclude: /(node_modules)/,
-                loader: 'babel-loader',
-                options: { presets: ["@babel/env"] }
-            },
-            {
-                test: /\.css$/,
-                use: ["style-loader","css-loader"]
-            }
-        ]
-    },
-    resolve: { extensions: ['*','.js','.jsx'] },
-    output: {
-        path: path.resolve(__dirname,'dist'),
-        publicPath: '/dist/',
-        filename: 'bundle.js'
-    },
-    devServer: {
-        port: 3000,
-        hot: "only",
-        devMiddleware: {
-            publicPath: 'http://localhost:3000/dist',
-        },
-        static: {
-            directory: path.resolve(__dirname, "public/"),
-        }
-    },
-    plugins: [new webpack.HotModuleReplacementPlugin()]
-}
-*/
