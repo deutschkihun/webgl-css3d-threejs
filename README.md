@@ -1,4 +1,4 @@
-# Animation3DWorld
+# 3DWebGL-ThreeJS
 
 Starter project for Three.JS with webpack and babel configuration 
 
