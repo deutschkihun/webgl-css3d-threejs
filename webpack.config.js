@@ -55,5 +55,5 @@ module.exports = {
     compress: true,
     port: 9000,
   },
-  plugins: [new webpack.HotModuleReplacementPlugin(),    new LiveReloadPlugin()],
+  plugins: [new webpack.HotModuleReplacementPlugin()],
 }
