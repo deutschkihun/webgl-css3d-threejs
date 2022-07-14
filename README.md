@@ -1,10 +1,5 @@
 # webgl-animation 
 
-Clone the project and install dependencies:
-
-```bash
-git clone https://github.com/deutschkihun/Animation3DWorld
-npm i
 ```
 
 Start webpack development server:
