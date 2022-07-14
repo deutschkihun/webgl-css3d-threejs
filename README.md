@@ -1,8 +1,4 @@
-# webgl-css3d-threejs
-
-Starter project for Three.JS with webpack and babel configuration 
-
-## Development / Production
+# webgl-animation 
 
 Clone the project and install dependencies:
 
