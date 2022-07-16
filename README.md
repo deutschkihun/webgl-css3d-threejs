@@ -1,7 +1,6 @@
-# webgl-animation 
+# webgl 
 
 ```
-
 Start webpack development server:
 
 ```bash
